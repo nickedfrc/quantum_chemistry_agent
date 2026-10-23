@@ -1,0 +1,9 @@
+.venv*/
+__pycache__/
+.DS_Store
+models/
+runs/
+*.incomplete
+paper/*.aux
+paper/*.log
+paper/*.out
