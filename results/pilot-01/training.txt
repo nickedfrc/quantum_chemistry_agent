@@ -1,0 +1,46 @@
+Loading configuration file train_config.yaml
+Loading pretrained model
+Loading datasets
+Training
+╭─ mlx_lm.lora ────────────────────────────────────────────────────────────────────────────────────────────────────────╮
+│    model           mlx-community/Qwen2.5-Coder-1.5B-Instruct-4bit                                       │
+│    type            lora · 4 layers · rank 8                                                                          │
+│    dataset         data                 │
+│    optimizer       adam · lr 1.0e-04                                                                                 │
+│    batch · iters   1 · 176                                                                                           │
+│    max seq         1,024                                                                                             │
+╰──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────╯
+Trainable parameters: 0.010% (0.156M/1543.714M)
+  iter   train_loss     tok/s     tokens
+     1    val 3.870    4.52s
+     8    3.853 ▼       65      0.6k
+    16    3.114 ▼      118      1.2k
+    24    3.305 ▲      107      1.7k
+    32    3.834 ▲      121      2.2k
+    40    3.346 ▼      109      2.7k
+    44    val 3.186    4.24s
+  save  0000044_adapters.safetensors
+    48    3.423 ▲      127      3.3k
+    56    3.103 ▼      113      3.8k
+    64    3.151 ▲      115      4.3k
+    72    2.136 ▼       99      4.7k
+    80    3.587 ▲      126      5.3k
+    88    val 2.792    4.26s
+    88    2.780 ▼      111      5.8k
+  save  0000088_adapters.safetensors
+    96    2.502 ▼      114      6.3k
+   104    2.674 ▲      102      6.7k
+   112    2.637 ▼      122      7.3k
+   120    1.860 ▼      118      7.8k
+   128    2.126 ▲      121      8.4k
+   132    val 2.509    4.26s
+  save  0000132_adapters.safetensors
+   136    2.465 ▲      100      8.8k
+   144    2.723 ▲      113      9.3k
+   152    2.466 ▼      112      9.8k
+   160    2.832 ▲      124     10.3k
+   168    3.118 ▲      133     11.0k
+   176    val 2.427    4.25s
+   176    2.676 ▼      120     11.5k
+  save  0000176_adapters.safetensors
+train ██████████████████████████████ 100% ·   176/176

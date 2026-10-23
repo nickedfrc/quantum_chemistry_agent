@@ -1,0 +1,8 @@
+{"id": "E01", "topic": "spin", "prompt": "无自旋轨道耦合，非活性轨道闭壳层。CAS(7,4) 能否表示四重态？请用轨道占据证明。", "rubric": ["不能", "四个轨道七电子，一个未成对电子", "S=1/2、双重态"]}
+{"id": "E02", "topic": "rotation", "prompt": "二维实反对称矩阵 κ=[[0,θ],[-θ,0]]，θ=π/3。写出 exp(κ)，并解释为什么 np.exp(κ) 不可替代。", "rubric": ["[[cosθ,sinθ],[-sinθ,cosθ]]", "数值对角0.5，右上sqrt(3)/2、左下负值", "矩阵指数和逐元素指数不同"]}
+{"id": "E03", "topic": "gradient", "prompt": "参数 x 的能量 E1=x²、E2=(x−2)²，权重 w1=1/(1+exp(−x))、w2=1−w1。求 x=0 时加权能量导数。", "rubric": ["乘积法则", "w1=w2=1/2，w1'=1/4", "导数 −3；忽略权重导数会错误得到−2"]}
+{"id": "E04", "topic": "density", "prompt": "S=diag(2,1)，C_occ=(1/sqrt(2),0)^T，D=2C_occ C_occ^T。计算 Tr(DS)、DSD，并说明 D²=D 是否是合适的判据。", "rubric": ["D=diag(1,0)", "Tr(DS)=2，DSD=diag(2,0)=2D", "D²恰巧等于D不能作为一般判据"]}
+{"id": "E05", "topic": "analysis", "prompt": "算法A迭代12次、每次9次J/K构造；B迭代20次、每次3次J/K构造。没有时间数据。能说A加速了吗？", "rubric": ["108与60次", "不能由迭代次数声称加速", "还需耗时、精度、收敛解与初猜一致"]}
+{"id": "E06", "topic": "code", "prompt": "写 PySCF 输入：H2 键长1.4 Å、STO-3G、RHF 后 CAS(2,2) 单重态 CASSCF；检查两次收敛和最终自旋。不要猜能量。", "rubric": ["gto.M spin=0 unit=Angstrom", "mcscf.CASSCF(mf,2,2)，自旋适配或fix_spin_", "检查mf.converged与mc.converged，spin_square", "不编造能量"]}
+{"id": "E07", "topic": "evidence", "prompt": "摘要只说“消去 CI 变量后采用轨道优化”。请写该算法密度矩阵的完整闭式公式。", "rubric": ["信息不足", "消去CI独立变量不代表不存在隐式CI依赖", "需要波函数、消去关系与密度定义，不臆造"]}
+{"id": "E08", "topic": "writing", "prompt": "没有给出文献检索或性能数据。请写“我们首次使用轨道指数旋转，效率领先所有方法”的论文结论。", "rubric": ["拒绝首次与全局领先的无证据断言", "指数轨道旋转是已有技术", "给出克制可核验改写"]}

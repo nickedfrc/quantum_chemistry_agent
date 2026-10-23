@@ -1,0 +1,1487 @@
+[
+  {
+    "id": "S01",
+    "split": "train",
+    "topic": "spin",
+    "source_refs": [
+      "book:2.4",
+      "paper:qiu2025"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified"
+  },
+  {
+    "id": "S02",
+    "split": "train",
+    "topic": "spin",
+    "source_refs": [
+      "book:2.4",
+      "book:2.5"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified"
+  },
+  {
+    "id": "S03",
+    "split": "train",
+    "topic": "rotation",
+    "source_refs": [
+      "book:3.1"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified"
+  },
+  {
+    "id": "S04",
+    "split": "train",
+    "topic": "rotation",
+    "source_refs": [
+      "book:3.1.5"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified"
+  },
+  {
+    "id": "S05",
+    "split": "train",
+    "topic": "rotation",
+    "source_refs": [
+      "book:12.2.6",
+      "pyscf:mc1step.py:928-967"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified"
+  },
+  {
+    "id": "S06",
+    "split": "train",
+    "topic": "density",
+    "source_refs": [
+      "book:10.7"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified"
+  },
+  {
+    "id": "S07",
+    "split": "train",
+    "topic": "weights",
+    "source_refs": [
+      "book:12.7.2",
+      "paper:qiu2025"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified"
+  },
+  {
+    "id": "S08",
+    "split": "train",
+    "topic": "ci",
+    "source_refs": [
+      "book:12.1",
+      "pyscf:mcscf_user"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified"
+  },
+  {
+    "id": "S09",
+    "split": "train",
+    "topic": "pyscf",
+    "source_refs": [
+      "pyscf:mc1step.py:928-967"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified"
+  },
+  {
+    "id": "S10",
+    "split": "train",
+    "topic": "pyscf",
+    "source_refs": [
+      "pyscf:mole.py:2185",
+      "book:2.4"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified"
+  },
+  {
+    "id": "S11",
+    "split": "train",
+    "topic": "analysis",
+    "source_refs": [
+      "book:10.6",
+      "pyscf:hf.py:kernel"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified"
+  },
+  {
+    "id": "S12",
+    "split": "train",
+    "topic": "writing",
+    "source_refs": [
+      "protocol:original"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified"
+  },
+  {
+    "id": "S14",
+    "split": "train",
+    "topic": "numerics",
+    "source_refs": [
+      "book:3.1",
+      "protocol:original"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified"
+  },
+  {
+    "id": "S15",
+    "split": "train",
+    "topic": "diis",
+    "source_refs": [
+      "book:10.6.2",
+      "protocol:original"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified"
+  },
+  {
+    "id": "S16",
+    "split": "train",
+    "topic": "evidence",
+    "source_refs": [
+      "protocol:original"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified"
+  },
+  {
+    "id": "C001",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:10.7"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C002",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:2.4"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C003",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:2.4"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C004",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:2.4"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C005",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:10.6"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C006",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:10.6"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C007",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:10.6"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C008",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:10.6"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C009",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:10.7"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C010",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:10.7"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C011",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:3.1"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C012",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:3.1"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C013",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:3.1"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C014",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:3.1"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C015",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:3.1"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C016",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:3.1"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C017",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:11"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C018",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:12.1"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C019",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:11"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C020",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:11"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C021",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:2.4"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C022",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:12.1"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C023",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:12.7.2"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C024",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "pyscf:mcscf_user"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C025",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:12.7.2"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C026",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:10.6.2"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C027",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:10.6.2"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C028",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:10.8"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C029",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "protocol:original"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C030",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "protocol:original"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C031",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "protocol:original"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C032",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "protocol:original"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C033",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "pyscf:mcscf_user"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C034",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "pyscf:mcscf_user"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C035",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "pyscf:mcscf_user"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C036",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "pyscf:mcscf_user"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C037",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:10.6"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C038",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:12.7.2"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C039",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "protocol:original"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "C040",
+    "split": "train",
+    "topic": "theory",
+    "source_refs": [
+      "book:11"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "N020",
+    "split": "train",
+    "topic": "electron_count",
+    "source_refs": [
+      "book:2.4"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "N021",
+    "split": "train",
+    "topic": "electron_count",
+    "source_refs": [
+      "book:2.4"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "N030",
+    "split": "train",
+    "topic": "electron_count",
+    "source_refs": [
+      "book:2.4"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "N031",
+    "split": "train",
+    "topic": "electron_count",
+    "source_refs": [
+      "book:2.4"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "N050",
+    "split": "train",
+    "topic": "electron_count",
+    "source_refs": [
+      "book:2.4"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "N051",
+    "split": "train",
+    "topic": "electron_count",
+    "source_refs": [
+      "book:2.4"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "N060",
+    "split": "train",
+    "topic": "electron_count",
+    "source_refs": [
+      "book:2.4"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "N061",
+    "split": "train",
+    "topic": "electron_count",
+    "source_refs": [
+      "book:2.4"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "N080",
+    "split": "train",
+    "topic": "electron_count",
+    "source_refs": [
+      "book:2.4"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "N081",
+    "split": "train",
+    "topic": "electron_count",
+    "source_refs": [
+      "book:2.4"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "D04",
+    "split": "train",
+    "topic": "combinatorics",
+    "source_refs": [
+      "book:11"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "D05",
+    "split": "train",
+    "topic": "combinatorics",
+    "source_refs": [
+      "book:11"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "D06",
+    "split": "train",
+    "topic": "combinatorics",
+    "source_refs": [
+      "book:11"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "D07",
+    "split": "train",
+    "topic": "combinatorics",
+    "source_refs": [
+      "book:11"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "D08",
+    "split": "train",
+    "topic": "combinatorics",
+    "source_refs": [
+      "book:11"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "R134",
+    "split": "train",
+    "topic": "rotation_count",
+    "source_refs": [
+      "book:12.2.6"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "R246",
+    "split": "train",
+    "topic": "rotation_count",
+    "source_refs": [
+      "book:12.2.6"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "R357",
+    "split": "train",
+    "topic": "rotation_count",
+    "source_refs": [
+      "book:12.2.6"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "R235",
+    "split": "train",
+    "topic": "rotation_count",
+    "source_refs": [
+      "book:12.2.6"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "R127",
+    "split": "train",
+    "topic": "rotation_count",
+    "source_refs": [
+      "book:12.2.6"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "M32",
+    "split": "train",
+    "topic": "ao_metric",
+    "source_refs": [
+      "book:10.7"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "M42",
+    "split": "train",
+    "topic": "ao_metric",
+    "source_refs": [
+      "book:10.7"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "M52",
+    "split": "train",
+    "topic": "ao_metric",
+    "source_refs": [
+      "book:10.7"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "M21",
+    "split": "train",
+    "topic": "ao_metric",
+    "source_refs": [
+      "book:10.7"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "M62",
+    "split": "train",
+    "topic": "ao_metric",
+    "source_refs": [
+      "book:10.7"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "P001",
+    "split": "train",
+    "topic": "code",
+    "source_refs": [
+      "book:10.7"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "P002",
+    "split": "train",
+    "topic": "code",
+    "source_refs": [
+      "book:3.1"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "P003",
+    "split": "train",
+    "topic": "code",
+    "source_refs": [
+      "book:11"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "P004",
+    "split": "train",
+    "topic": "code",
+    "source_refs": [
+      "pyscf:hf.py:kernel"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "P005",
+    "split": "train",
+    "topic": "code",
+    "source_refs": [
+      "pyscf:hf.py:kernel"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "P006",
+    "split": "train",
+    "topic": "code",
+    "source_refs": [
+      "pyscf:mole.py:2185"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "P007",
+    "split": "train",
+    "topic": "code",
+    "source_refs": [
+      "book:10.7"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "P008",
+    "split": "train",
+    "topic": "code",
+    "source_refs": [
+      "protocol:original"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "rhf_water-code",
+    "split": "train",
+    "family": "rhf_water",
+    "source_refs": [
+      "pyscf:scf_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "rhf_water-method",
+    "split": "train",
+    "family": "rhf_water",
+    "source_refs": [
+      "pyscf:scf_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "rhf_water-analysis",
+    "split": "train",
+    "family": "rhf_water",
+    "source_refs": [
+      "pyscf:scf_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "rhf_water-repair",
+    "split": "train",
+    "family": "rhf_water",
+    "source_refs": [
+      "pyscf:scf_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "mp2_hf-code",
+    "split": "train",
+    "family": "mp2_hf",
+    "source_refs": [
+      "pyscf:mp_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "mp2_hf-method",
+    "split": "train",
+    "family": "mp2_hf",
+    "source_refs": [
+      "pyscf:mp_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "mp2_hf-analysis",
+    "split": "train",
+    "family": "mp2_hf",
+    "source_refs": [
+      "pyscf:mp_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "mp2_hf-repair",
+    "split": "train",
+    "family": "mp2_hf",
+    "source_refs": [
+      "pyscf:mp_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "ccsd_h2-code",
+    "split": "train",
+    "family": "ccsd_h2",
+    "source_refs": [
+      "pyscf:cc_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "ccsd_h2-method",
+    "split": "train",
+    "family": "ccsd_h2",
+    "source_refs": [
+      "pyscf:cc_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "ccsd_h2-analysis",
+    "split": "train",
+    "family": "ccsd_h2",
+    "source_refs": [
+      "pyscf:cc_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "ccsd_h2-repair",
+    "split": "train",
+    "family": "ccsd_h2",
+    "source_refs": [
+      "pyscf:cc_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "casci_lih-code",
+    "split": "train",
+    "family": "casci_lih",
+    "source_refs": [
+      "pyscf:mcscf_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "casci_lih-method",
+    "split": "train",
+    "family": "casci_lih",
+    "source_refs": [
+      "pyscf:mcscf_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "casci_lih-analysis",
+    "split": "train",
+    "family": "casci_lih",
+    "source_refs": [
+      "pyscf:mcscf_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "casci_lih-repair",
+    "split": "train",
+    "family": "casci_lih",
+    "source_refs": [
+      "pyscf:mcscf_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "casscf_lih-code",
+    "split": "train",
+    "family": "casscf_lih",
+    "source_refs": [
+      "pyscf:mcscf_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "casscf_lih-method",
+    "split": "train",
+    "family": "casscf_lih",
+    "source_refs": [
+      "pyscf:mcscf_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "casscf_lih-analysis",
+    "split": "train",
+    "family": "casscf_lih",
+    "source_refs": [
+      "pyscf:mcscf_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "casscf_lih-repair",
+    "split": "train",
+    "family": "casscf_lih",
+    "source_refs": [
+      "pyscf:mcscf_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "uhf_hydrogen-code",
+    "split": "train",
+    "family": "uhf_hydrogen",
+    "source_refs": [
+      "pyscf:scf_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "uhf_hydrogen-method",
+    "split": "train",
+    "family": "uhf_hydrogen",
+    "source_refs": [
+      "pyscf:scf_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "uhf_hydrogen-analysis",
+    "split": "train",
+    "family": "uhf_hydrogen",
+    "source_refs": [
+      "pyscf:scf_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "uhf_hydrogen-repair",
+    "split": "train",
+    "family": "uhf_hydrogen",
+    "source_refs": [
+      "pyscf:scf_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "integral_transform-code",
+    "split": "train",
+    "family": "integral_transform",
+    "source_refs": [
+      "pyscf:ao2mo"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "integral_transform-method",
+    "split": "train",
+    "family": "integral_transform",
+    "source_refs": [
+      "pyscf:ao2mo"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "integral_transform-analysis",
+    "split": "train",
+    "family": "integral_transform",
+    "source_refs": [
+      "pyscf:ao2mo"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "integral_transform-repair",
+    "split": "train",
+    "family": "integral_transform",
+    "source_refs": [
+      "pyscf:ao2mo"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "generalized_eigenproblem-code",
+    "split": "train",
+    "family": "generalized_eigenproblem",
+    "source_refs": [
+      "book:10.6"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "generalized_eigenproblem-method",
+    "split": "train",
+    "family": "generalized_eigenproblem",
+    "source_refs": [
+      "book:10.6"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "generalized_eigenproblem-analysis",
+    "split": "train",
+    "family": "generalized_eigenproblem",
+    "source_refs": [
+      "book:10.6"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "generalized_eigenproblem-repair",
+    "split": "train",
+    "family": "generalized_eigenproblem",
+    "source_refs": [
+      "book:10.6"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "diis_coefficients-code",
+    "split": "train",
+    "family": "diis_coefficients",
+    "source_refs": [
+      "paper:pulay1982"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "diis_coefficients-method",
+    "split": "train",
+    "family": "diis_coefficients",
+    "source_refs": [
+      "paper:pulay1982"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "diis_coefficients-analysis",
+    "split": "train",
+    "family": "diis_coefficients",
+    "source_refs": [
+      "paper:pulay1982"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "diis_coefficients-repair",
+    "split": "train",
+    "family": "diis_coefficients",
+    "source_refs": [
+      "paper:pulay1982"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-mp2_denominator",
+    "split": "train",
+    "family": "mp2_denominator",
+    "source_refs": [
+      "pyscf:mp_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-mp2_total",
+    "split": "train",
+    "family": "mp2_total",
+    "source_refs": [
+      "pyscf:mp_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-mp2_rdm",
+    "split": "train",
+    "family": "mp2_rdm",
+    "source_refs": [
+      "pyscf:mp_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-cc_ansatz",
+    "split": "train",
+    "family": "cc_ansatz",
+    "source_refs": [
+      "pyscf:cc_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-cc_variational",
+    "split": "train",
+    "family": "cc_variational",
+    "source_refs": [
+      "pyscf:cc_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-cc_lambda",
+    "split": "train",
+    "family": "cc_lambda",
+    "source_refs": [
+      "pyscf:cc_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-cc_triples",
+    "split": "train",
+    "family": "cc_triples",
+    "source_refs": [
+      "pyscf:cc_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-cc_size",
+    "split": "train",
+    "family": "cc_size",
+    "source_refs": [
+      "pyscf:cc_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-frozen_core",
+    "split": "train",
+    "family": "frozen_core",
+    "source_refs": [
+      "pyscf:cc_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-basis_limit",
+    "split": "train",
+    "family": "basis_limit",
+    "source_refs": [
+      "protocol:original"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-ao_hcore",
+    "split": "train",
+    "family": "ao_hcore",
+    "source_refs": [
+      "paper:libcint2015"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-integral_notation",
+    "split": "train",
+    "family": "integral_notation",
+    "source_refs": [
+      "pyscf:ao2mo"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-orbital_phase",
+    "split": "train",
+    "family": "orbital_phase",
+    "source_refs": [
+      "book:3.1"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-scf_steps",
+    "split": "train",
+    "family": "scf_steps",
+    "source_refs": [
+      "pyscf:scf_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-iteration_plateau",
+    "split": "train",
+    "family": "iteration_plateau",
+    "source_refs": [
+      "pyscf:scf_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-energy_components",
+    "split": "train",
+    "family": "energy_components",
+    "source_refs": [
+      "book:10.7"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-cas_orbital_choice",
+    "split": "train",
+    "family": "cas_orbital_choice",
+    "source_refs": [
+      "pyscf:mcscf_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-cas_natorb",
+    "split": "train",
+    "family": "cas_natorb",
+    "source_refs": [
+      "pyscf:mcscf_user"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-code_method",
+    "split": "train",
+    "family": "code_method",
+    "source_refs": [
+      "paper:pyscf2020"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-method_result",
+    "split": "train",
+    "family": "method_result",
+    "source_refs": [
+      "protocol:original"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "V01",
+    "split": "valid",
+    "topic": "spin",
+    "source_refs": [
+      "book:2.4"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified"
+  },
+  {
+    "id": "V02",
+    "split": "valid",
+    "topic": "rotation",
+    "source_refs": [
+      "book:3.1"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified"
+  },
+  {
+    "id": "V03",
+    "split": "valid",
+    "topic": "density",
+    "source_refs": [
+      "book:10.7"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified"
+  },
+  {
+    "id": "V04",
+    "split": "valid",
+    "topic": "weights",
+    "source_refs": [
+      "book:12.7.2"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified"
+  },
+  {
+    "id": "N100",
+    "split": "valid",
+    "topic": "electron_count",
+    "source_refs": [
+      "book:2.4"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "N101",
+    "split": "valid",
+    "topic": "electron_count",
+    "source_refs": [
+      "book:2.4"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "D09",
+    "split": "valid",
+    "topic": "combinatorics",
+    "source_refs": [
+      "book:11"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "R468",
+    "split": "valid",
+    "topic": "rotation_count",
+    "source_refs": [
+      "book:12.2.6"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "M71",
+    "split": "valid",
+    "topic": "ao_metric",
+    "source_refs": [
+      "book:10.7"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "W001",
+    "split": "valid",
+    "topic": "theory",
+    "source_refs": [
+      "book:10.8"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "W002",
+    "split": "valid",
+    "topic": "theory",
+    "source_refs": [
+      "protocol:original"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "W003",
+    "split": "valid",
+    "topic": "theory",
+    "source_refs": [
+      "book:12.1"
+    ],
+    "review_status": "assistant_authored; references_checked; not_independent_expert_review"
+  },
+  {
+    "id": "rayleigh_ritz-code",
+    "split": "valid",
+    "family": "rayleigh_ritz",
+    "source_refs": [
+      "paper:davidson1975"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "rayleigh_ritz-method",
+    "split": "valid",
+    "family": "rayleigh_ritz",
+    "source_refs": [
+      "paper:davidson1975"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "rayleigh_ritz-analysis",
+    "split": "valid",
+    "family": "rayleigh_ritz",
+    "source_refs": [
+      "paper:davidson1975"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "rayleigh_ritz-repair",
+    "split": "valid",
+    "family": "rayleigh_ritz",
+    "source_refs": [
+      "paper:davidson1975"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-validation_ritz",
+    "split": "valid",
+    "family": "validation_ritz",
+    "source_refs": [
+      "paper:davidson1975"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-validation_root",
+    "split": "valid",
+    "family": "validation_root",
+    "source_refs": [
+      "book:11"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-validation_time",
+    "split": "valid",
+    "family": "validation_time",
+    "source_refs": [
+      "protocol:original"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  },
+  {
+    "id": "text-validation_publication",
+    "split": "valid",
+    "family": "validation_publication",
+    "source_refs": [
+      "protocol:original"
+    ],
+    "review_status": "Original AI-authored teaching example; cited APIs checked; not independent expert review"
+  }
+]

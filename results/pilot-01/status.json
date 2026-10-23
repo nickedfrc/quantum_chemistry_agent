@@ -1,0 +1,8 @@
+{
+  "status": "completed",
+  "started_at": "2026-10-23T10:02:25.399220+00:00",
+  "baseline_seconds": 62.31650379200073,
+  "training_seconds": 130.33651458299937,
+  "adapted_seconds": 34.69249870800195,
+  "completed_at": "2026-10-23T10:06:15.470754+00:00"
+}

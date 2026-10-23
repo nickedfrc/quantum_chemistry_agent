@@ -1,0 +1,26 @@
+{
+  "model": {
+    "repository": "mlx-community/Qwen2.5-Coder-1.5B-Instruct-4bit",
+    "revision": "b3252a2f97102b1fb1571fec2c9b27219a8536be",
+    "upstream": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+    "quantization": "4-bit MLX",
+    "license": "Apache-2.0"
+  },
+  "platform": "macOS-15.8.2-arm64-arm-64bit-Mach-O",
+  "python": "3.13.3",
+  "versions": {
+    "mlx": "0.32.4",
+    "mlx-lm": "0.32.2",
+    "transformers": "5.20.2",
+    "numpy": "2.5.4"
+  },
+  "hashes": {
+    "data/train.jsonl": "826e027ff4e517bd4bb98fd82d923beb66da44b3060aec17129cd0edbefc6c4f",
+    "data/valid.jsonl": "eb2402bf34bc62b21c5837e04e114cf5d79025d62927808ebf74461e8522c8ba",
+    "evaluation/holdout.jsonl": "4483f9bab1da03d813e3279c8bda68919aca82688b597da0190363fe94c2d7cc",
+    "train_config.yaml": "0dd4d6d04d2725234250f71ba2cb9b8188d6eb740e2caa49f773c9d94aae2b75",
+    "model_lock.json": "b29261c328333b455de4aba03cfc337707ec9828c5c00657a0973780825b9bd8",
+    "scripts/train_mlx.py": "73d1ecd55296e858ce9574e3759bd979f7657d6f779f7e82652a36c11d54ed93"
+  },
+  "selection": "Fixed final iteration; no checkpoint selection using diagnostic responses."
+}

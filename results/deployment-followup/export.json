@@ -1,0 +1,33 @@
+{
+  "method": "CPU NumPy affine int4 dequantization and FP16 LoRA merge",
+  "source_revision": "b3252a2f97102b1fb1571fec2c9b27219a8536be",
+  "adapter_sha256": "aba0d2a565b5f44ad6e38a930deb99c30a9e26c4c510132ea9373b0534987292",
+  "output_sha256": "9234b2ada282fafc06523dad5f39cb74b035bd168685f659882380c963afbb53",
+  "output_bytes": 3087466808,
+  "tensor_count": 338,
+  "parameter_count": 1543714304,
+  "merged_modules": [
+    "model.layers.24.self_attn.q_proj",
+    "model.layers.24.self_attn.v_proj",
+    "model.layers.25.self_attn.q_proj",
+    "model.layers.25.self_attn.v_proj",
+    "model.layers.26.self_attn.q_proj",
+    "model.layers.26.self_attn.v_proj",
+    "model.layers.27.self_attn.q_proj",
+    "model.layers.27.self_attn.v_proj"
+  ],
+  "synthetic_tests": "passed",
+  "all_output_weights_finite": true,
+  "limitation": "Not bitwise compared with native MLX fusion; deployment is evaluated separately.",
+  "ollama_version": "0.40.6",
+  "ollama_model": "quantum-chemistry-followup:1.5b",
+  "ollama_model_id": "dc76fc581cc7",
+  "llama_cpp_release": "b11836",
+  "gguf_quantization": "Q4_K_M",
+  "import_status": "success",
+  "smoke_inference_status": "completed with token-limit truncation",
+  "scientific_review": "Failed: it omits the requested electron counts, gives S=(Nalpha+Nbeta)/2 for a closed-shell pair, and repeats until the token limit.",
+  "matched_mlx_results_apply_to_this_export": false,
+  "gguf_sha256": "1b940ab645fb4d743454cc13d39ce4e3198c372cd1781c39b844939ac860db87",
+  "gguf_bytes": 986047936
+}

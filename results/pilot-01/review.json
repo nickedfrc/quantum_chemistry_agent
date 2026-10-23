@@ -1,0 +1,63 @@
+{
+  "reviewer": "AI assistant; unblinded; no independent expert adjudication",
+  "criterion": "A strict pass requires every listed rubric item and no material contradictory scientific claim.",
+  "benchmark_scope": "Development-visible diagnostics; not a blind or source-disjoint generalization benchmark.",
+  "cases": [
+    {
+      "id": "E01",
+      "before_pass": false,
+      "after_pass": false,
+      "before_reason": "Incorrect spin and occupancy reasoning; introduces unrelated code and stops at the token limit.",
+      "after_reason": "Correctly rejects a quartet, but gives an incorrect spin explanation and does not establish the required doublet occupancy."
+    },
+    {
+      "id": "E02",
+      "before_pass": false,
+      "after_pass": false,
+      "before_reason": "Off-diagonal signs are reversed and the explanation of NumPy exp is incorrect.",
+      "after_reason": "Restates a proposed solution plan without providing the matrix exponential or a substantive answer."
+    },
+    {
+      "id": "E03",
+      "before_pass": false,
+      "after_pass": false,
+      "before_reason": "Invents an unnecessary wavefunction and piecewise energy; never obtains the weighted derivative.",
+      "after_reason": "Uses an incorrect logistic derivative and product rule, omits the second state, and concludes -1 instead of -3."
+    },
+    {
+      "id": "E04",
+      "before_pass": false,
+      "after_pass": false,
+      "before_reason": "Misidentifies the AO overlap and changes the occupied coefficient vector into a matrix.",
+      "after_reason": "Builds the density and electron trace correctly in code, but calculates D*D in place of D*S*D and does not explain the metric-dependent criterion."
+    },
+    {
+      "id": "E05",
+      "before_pass": false,
+      "after_pass": false,
+      "before_reason": "Computes 108 and 60 constructions but falsely concludes a speedup and a factor of three.",
+      "after_reason": "Correctly withholds a speedup conclusion, but falsely says the construction/iteration settings are the same and omits the requested counts."
+    },
+    {
+      "id": "E06",
+      "before_pass": false,
+      "after_pass": false,
+      "before_reason": "Coincident nuclei, nonexistent cc.CASSCF interface, and invalid spin/convergence checks.",
+      "after_reason": "Coincident nuclei, wrong distance unit, repeated invented tolerance attributes, and an incomplete CASSCF calculation."
+    },
+    {
+      "id": "E07",
+      "before_pass": false,
+      "after_pass": false,
+      "before_reason": "Invents an unsupported nested-sum expression and repeats until truncation.",
+      "after_reason": "Invents an unsupported method name and formula, then repeats an applicability claim until truncation."
+    },
+    {
+      "id": "E08",
+      "before_pass": false,
+      "after_pass": false,
+      "before_reason": "Repeats the unsupported priority and universal-performance claim.",
+      "after_reason": "Still endorses unsupported priority and universal superiority claims."
+    }
+  ]
+}

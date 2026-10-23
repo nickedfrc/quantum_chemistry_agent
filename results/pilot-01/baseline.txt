@@ -1,0 +1,8 @@
+E01 length 512
+E02 length 512
+E03 length 512
+E04 length 512
+E05 stop 89
+E06 length 512
+E07 length 512
+E08 stop 13

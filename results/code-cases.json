@@ -1,0 +1,168 @@
+{
+  "pyscf": "2.6.2",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "python": "3.12.14",
+  "cases": [
+    {
+      "id": "rhf_water",
+      "result": {
+        "energy_hartree": -74.96306312972916,
+        "electrons": 9.999999999999998,
+        "reconstruction_error": 1.4210854715202004e-14,
+        "scf_residual": 2.0198113891626404e-10
+      },
+      "checks": "passed",
+      "wall_seconds": 1.9181290000051376
+    },
+    {
+      "id": "mp2_hf",
+      "result": {
+        "hf_energy": -98.57110044414928,
+        "correlation_energy": -0.017475513792011493,
+        "total_energy": -98.58857595794129,
+        "mo_density_trace": 10.0,
+        "amplitude_shape": [
+          5,
+          5,
+          1,
+          1
+        ]
+      },
+      "checks": "passed",
+      "wall_seconds": 0.023834958003135398
+    },
+    {
+      "id": "ccsd_h2",
+      "result": {
+        "hf_energy": -1.1287000935564413,
+        "correlation_energy": -0.03467439753236358,
+        "total_energy": -1.1633744910888049,
+        "singles_norm": 0.007273788834327715,
+        "doubles_norm": 0.13056843682924793
+      },
+      "checks": "passed",
+      "wall_seconds": 0.038992082998447586
+    },
+    {
+      "id": "casci_lih",
+      "result": {
+        "total_energy": -7.862128833438586,
+        "core_orbitals": 1,
+        "active_trace": 2.0,
+        "spin_squared": 1.8103741477240017e-32,
+        "multiplicity": 1.0,
+        "natural_occupations": [
+          0.0008204138940894836,
+          1.9991795861059103
+        ]
+      },
+      "checks": "passed",
+      "wall_seconds": 0.02418362499884097
+    },
+    {
+      "id": "casscf_lih",
+      "result": {
+        "casci_energy": -7.862128833438586,
+        "casscf_energy": -7.881045251277754,
+        "orbital_relaxation": -0.018916417839167643,
+        "core_orbitals": 1
+      },
+      "checks": "passed",
+      "wall_seconds": 0.06011162500362843
+    },
+    {
+      "id": "uhf_hydrogen",
+      "result": {
+        "total_energy": -0.49927840341958307,
+        "alpha_electrons": 1.0000000000000002,
+        "beta_electrons": 0.0,
+        "spin_squared": 0.75,
+        "multiplicity": 2.0
+      },
+      "checks": "passed",
+      "wall_seconds": 0.0011322499995003454
+    },
+    {
+      "id": "integral_transform",
+      "result": {
+        "full_shape": [
+          2,
+          2,
+          2,
+          2
+        ],
+        "packed_shape": [
+          3,
+          3
+        ],
+        "max_error": 3.993790406724999e-16
+      },
+      "checks": "passed",
+      "wall_seconds": 0.013130125000316184
+    },
+    {
+      "id": "generalized_eigenproblem",
+      "result": {
+        "eigenvalues": [
+          -1.1542992108975847,
+          0.2866521520740555
+        ],
+        "residual": 2.6558837364083264e-16,
+        "metric_error": 2.5901147840431205e-16
+      },
+      "checks": "passed",
+      "wall_seconds": 5.295799928717315e-05
+    },
+    {
+      "id": "diis_coefficients",
+      "result": {
+        "coefficients": [
+          0.7346938775510203,
+          0.18367346938775508,
+          0.08163265306122448
+        ],
+        "sum": 0.9999999999999999,
+        "extrapolated_error_norm": 0.8571428571428571
+      },
+      "checks": "passed",
+      "wall_seconds": 3.4167002013418823e-05
+    },
+    {
+      "id": "rayleigh_ritz",
+      "result": {
+        "ritz_energy": 0.5359475790946163,
+        "exact_lowest": 0.04639255236768662,
+        "full_residual": 1.3369429929201475,
+        "projected_residual": 3.5333894300643197e-16
+      },
+      "checks": "passed",
+      "wall_seconds": 0.0011486660005175509
+    },
+    {
+      "id": "gradient_check",
+      "result": {
+        "analytic_hartree_per_bohr": -0.0040695540860054,
+        "finite_difference": -0.0040699343202277305,
+        "absolute_error": 3.802342223302446e-07,
+        "step_bohr": 0.001
+      },
+      "checks": "passed",
+      "wall_seconds": 0.06532754200452473
+    },
+    {
+      "id": "density_fitting_check",
+      "result": {
+        "conventional_energy": -100.01928891429992,
+        "fitted_energy": -100.01927825702155,
+        "difference_hartree": 1.0657278366466016e-05,
+        "auxiliary_basis": "cc-pvdz-jkfit"
+      },
+      "checks": "passed",
+      "wall_seconds": 0.058258624994778074
+    }
+  ],
+  "thread_limit_requested": 1,
+  "openmp_available": false,
+  "timing_note": "Single short verification runs, not performance measurements."
+}

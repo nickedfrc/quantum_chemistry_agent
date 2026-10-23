@@ -1,0 +1,49 @@
+{
+  "training_completed": true,
+  "steps": 176,
+  "trainable_parameters": 155648,
+  "adapter_bytes": 624302,
+  "reported_validation_loss": [
+    {
+      "iteration": 1,
+      "loss": 3.87
+    },
+    {
+      "iteration": 44,
+      "loss": 3.186
+    },
+    {
+      "iteration": 88,
+      "loss": 2.792
+    },
+    {
+      "iteration": 132,
+      "loss": 2.509
+    },
+    {
+      "iteration": 176,
+      "loss": 2.427
+    }
+  ],
+  "training_stage_seconds": 130.33651458299937,
+  "baseline_stage_seconds": 62.31650379200073,
+  "adapted_stage_seconds": 34.69249870800195,
+  "training_peak_memory_gb": null,
+  "diagnostics": {
+    "before": {
+      "cases": 8,
+      "strict_passes": 0,
+      "truncated": 6,
+      "generated_tokens": 3174,
+      "max_reported_inference_peak_gb": 1.144516594
+    },
+    "after": {
+      "cases": 8,
+      "strict_passes": 0,
+      "truncated": 2,
+      "generated_tokens": 1786,
+      "max_reported_inference_peak_gb": 1.144500276
+    }
+  },
+  "interpretation": "Validation loss decreased, but this pilot did not establish reliable scientific correctness."
+}

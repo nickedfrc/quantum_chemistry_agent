@@ -1,0 +1,26 @@
+model: mlx-community/Qwen2.5-Coder-1.5B-Instruct-4bit
+train: true
+fine_tune_type: lora
+optimizer: adam
+data: data
+seed: 42
+num_layers: 4
+batch_size: 1
+iters: 176
+val_batches: -1
+learning_rate: 0.0001
+steps_per_report: 8
+steps_per_eval: 44
+save_every: 44
+adapter_path: adapters
+max_seq_length: 1024
+grad_checkpoint: true
+grad_accumulation_steps: 1
+mask_prompt: true
+test: false
+trust_remote_code: false
+lora_parameters:
+  keys: [self_attn.q_proj, self_attn.v_proj]
+  rank: 8
+  scale: 16.0
+  dropout: 0.0

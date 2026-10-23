@@ -1,0 +1,26 @@
+{
+  "status": "validated dataset; completed training and evaluation recorded in results/followup-01",
+  "new_records": 64,
+  "numerical_cases_run": 12,
+  "training_code_families": [
+    "rhf_water",
+    "mp2_hf",
+    "ccsd_h2",
+    "casci_lih",
+    "casscf_lih",
+    "uhf_hydrogen",
+    "integral_transform",
+    "generalized_eigenproblem",
+    "diis_coefficients"
+  ],
+  "validation_code_families": [
+    "rayleigh_ritz"
+  ],
+  "held_out_code_families": [
+    "gradient_check",
+    "density_fitting_check"
+  ],
+  "limitations": "AI-authored and reviewed, not a blind or independently expert-adjudicated benchmark. Original pilot examples remain included; broad topics can overlap.",
+  "references_added": 9,
+  "reference_access": "Some paper references are metadata/abstract only; see sources.json."
+}

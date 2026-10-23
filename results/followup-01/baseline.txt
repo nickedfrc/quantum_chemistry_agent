@@ -1,0 +1,6 @@
+F01 stop 420
+F02 length 512
+F03 length 512
+F04 stop 493
+F05 stop 317
+F06 length 512

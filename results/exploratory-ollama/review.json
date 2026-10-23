@@ -1,0 +1,22 @@
+{
+  "status": "historical unadapted exploratory run",
+  "model": "qwen2.5-coder:1.5b",
+  "quantization": "Q4_K_M",
+  "temperature": 0,
+  "seed": 42,
+  "num_ctx": 2048,
+  "max_output_tokens": 768,
+  "strict_passes": 0,
+  "cases": 8,
+  "partial_cases": [
+    "E05"
+  ],
+  "truncated_cases": [
+    "E01",
+    "E02",
+    "E03",
+    "E07"
+  ],
+  "reviewer": "AI assistant, unblinded; no independent expert adjudication",
+  "limitation": "Different backend and token budget from the matched MLX experiment. Not an estimate of adaptation benefit."
+}

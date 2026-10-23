@@ -1,0 +1,62 @@
+{
+  "reviewer": "Primary AI assistant and separate AI reviewer agreed; unblinded; no independent human expert adjudication",
+  "criterion": "A strict pass requires all substantive rubric requirements, accepting scientifically equivalent solutions, and no material contradictory scientific claim.",
+  "benchmark_scope": "Six development-visible diagnostics from gradient and density-fitting families held out of the newly added training cases. Broad concepts overlap with the original pilot. Not a blind generalization benchmark.",
+  "cases": [
+    {
+      "id": "F01",
+      "before_pass": false,
+      "after_pass": false,
+      "before_label": "fail",
+      "after_label": "fail",
+      "before_reason": "Uses the central-difference and force-sign formulas but evaluates -0.0004/0.004 as -1 instead of -0.1; the force should be +0.1 Hartree/Bohr. Does not distinguish the approximation.",
+      "after_reason": "No numerical gradient or force is computed. Correct units do not repair the incomplete derivative description or the nonsensical claim that force is a unit of the gradient."
+    },
+    {
+      "id": "F02",
+      "before_pass": false,
+      "after_pass": false,
+      "before_label": "fail",
+      "after_label": "fail",
+      "before_reason": "Assigns Angstrom units to electron counts, spin and basis; gives an incorrect reciprocal and no complete equivalent unit conversion or finite-difference/SCF error controls.",
+      "after_reason": "Invents the conversion divisor 1.0273341724101727 and incorrectly claims lowering computational precision reduces numerical error; omits required matching and convergence controls."
+    },
+    {
+      "id": "F03",
+      "before_pass": false,
+      "after_pass": false,
+      "before_label": "fail",
+      "after_label": "fail",
+      "before_reason": "Replaces the requested RHF/PySCF calculation with invented classical potentials, confuses analytical and finite-difference derivatives, and truncates before a valid implementation.",
+      "after_reason": "Produces only a repeated unverified dependency list, no RHF gradient or finite-difference code; stops at the token limit."
+    },
+    {
+      "id": "F04",
+      "before_pass": false,
+      "after_pass": false,
+      "before_label": "partial",
+      "after_label": "fail",
+      "before_reason": "Correctly computes the absolute Hartree difference, but omits the microHartree result and signed convention. Rejects a speedup conclusion but also claims no significant acceleration without timing data.",
+      "after_reason": "Uses the wrong difference magnitude 0.0000106674 instead of 0.0000106573 Hartree, omits 10.6573 microHartree and changes the sign convention. Refusing a speedup claim does not satisfy the remaining rubric."
+    },
+    {
+      "id": "F05",
+      "before_pass": false,
+      "after_pass": false,
+      "before_label": "fail",
+      "after_label": "fail",
+      "before_reason": "Explicitly endorses ignoring the auxiliary basis, thresholds and comparison, then gives a contradictory workflow rather than controlled verification.",
+      "after_reason": "Repeats an ambiguous double negative and supplies no validation workflow, auxiliary-basis record or matched comparison controls."
+    },
+    {
+      "id": "F06",
+      "before_pass": false,
+      "after_pass": false,
+      "before_label": "fail",
+      "after_label": "fail",
+      "before_reason": "Builds only one H atom with incompatible default spin, omits F, units and density fitting, invents scf_result.density, and checks unrelated SciPy optimizer success.",
+      "after_reason": "Restates the request without executable code, molecular setup, density-fitting call or convergence check. Does not invent timing, but does not perform the task."
+    }
+  ],
+  "generated_code_executed": false
+}

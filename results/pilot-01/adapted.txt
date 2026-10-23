@@ -1,0 +1,8 @@
+E01 stop 55
+E02 stop 88
+E03 stop 307
+E04 stop 219
+E05 stop 31
+E06 length 512
+E07 length 512
+E08 stop 62

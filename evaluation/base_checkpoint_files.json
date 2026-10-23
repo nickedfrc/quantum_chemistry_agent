@@ -1,0 +1,61 @@
+{
+  "status": "verified",
+  "source": "mlx-community/Qwen2.5-Coder-1.5B-Instruct-4bit",
+  "revision": "b3252a2f97102b1fb1571fec2c9b27219a8536be",
+  "files": [
+    {
+      "name": "added_tokens.json",
+      "size": 605,
+      "sha256": null,
+      "git_blob_sha1": "482ced4679301bf287ebb310bdd1790eb4514232"
+    },
+    {
+      "name": "config.json",
+      "size": 785,
+      "sha256": null,
+      "git_blob_sha1": "12b73826a0821cfb6cd8d24f83ab5b55b2e2128a"
+    },
+    {
+      "name": "merges.txt",
+      "size": 1671853,
+      "sha256": null,
+      "git_blob_sha1": "31349551d90c7606f325fe0f11bbb8bd5fa0d7c7"
+    },
+    {
+      "name": "model.safetensors",
+      "size": 868628559,
+      "sha256": "daeab4764fb420d161721791cf2e509e2de81a7af4223646e7bed2bf82c57b58",
+      "git_blob_sha1": "4e3aeca747bbdf70b8a21625630ec364c91b9e28"
+    },
+    {
+      "name": "model.safetensors.index.json",
+      "size": 51569,
+      "sha256": null,
+      "git_blob_sha1": "87eb58d416654c6c0ef987be30f6981a3176ffae"
+    },
+    {
+      "name": "special_tokens_map.json",
+      "size": 613,
+      "sha256": null,
+      "git_blob_sha1": "ac23c0aaa2434523c494330aeb79c58395378103"
+    },
+    {
+      "name": "tokenizer.json",
+      "size": 7031673,
+      "sha256": null,
+      "git_blob_sha1": "d24314ef7f0afd1b678c2e24c767e19f24f86b0e"
+    },
+    {
+      "name": "tokenizer_config.json",
+      "size": 7228,
+      "sha256": null,
+      "git_blob_sha1": "626207741cd3c44516466202246190c6b04bb201"
+    },
+    {
+      "name": "vocab.json",
+      "size": 2776833,
+      "sha256": null,
+      "git_blob_sha1": "4783fe10ac3adce15ac8f358ef5462739852c569"
+    }
+  ]
+}

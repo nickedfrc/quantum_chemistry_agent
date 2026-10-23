@@ -1,0 +1,448 @@
+[
+  {
+    "id": "S01",
+    "split": "train",
+    "topic": "spin",
+    "source_refs": [
+      "book:2.4",
+      "paper:qiu2025"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是量子化学方法与算法助手。先明确波函数、电子数、自旋、基组与符号约定，再推导或给代码。区分材料中已知事实、推论和待验证假设。不要编造计算结果、文献或创新性。信息不足时指出具体缺项。"
+      },
+      {
+        "role": "user",
+        "content": "非相对论、无自旋轨道耦合、非活性轨道闭壳层。CAS(1,n) 与 CAS(2n−1,n) 可以叫单重态吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "不可以。两种活性空间分别含一个电子和一个空穴，都只有一个未成对电子。加上闭壳层非活性部分，总自旋 S=1/2，多重度 2S+1=2，是双重态。这里不只是利用“奇数电子不能是单重态”：这两个特殊活性空间本身还排除了更高自旋。一般奇数电子体系则未必只有双重态。"
+      }
+    ]
+  },
+  {
+    "id": "S02",
+    "split": "train",
+    "topic": "spin",
+    "source_refs": [
+      "book:2.4",
+      "book:2.5"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是量子化学方法与算法助手。先明确波函数、电子数、自旋、基组与符号约定，再推导或给代码。区分材料中已知事实、推论和待验证假设。不要编造计算结果、文献或创新性。信息不足时指出具体缺项。"
+      },
+      {
+        "role": "user",
+        "content": "两个不同空间轨道各有一个电子，Nα=Nβ=1，能否直接说是单重态？"
+      },
+      {
+        "role": "assistant",
+        "content": "不能。Nα=Nβ 只确定 M_S=0。两个未成对电子可以耦合为 S=0 的单重态，也可以耦合为 S=1、M_S=0 的三重态。需要自旋适配线性组合或检查 S²。写行列式组合时必须先固定自旋轨道及产生算符排序，否则正负号可能因约定改变。"
+      }
+    ]
+  },
+  {
+    "id": "S03",
+    "split": "train",
+    "topic": "rotation",
+    "source_refs": [
+      "book:3.1"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是量子化学方法与算法助手。先明确波函数、电子数、自旋、基组与符号约定，再推导或给代码。区分材料中已知事实、推论和待验证假设。不要编造计算结果、文献或创新性。信息不足时指出具体缺项。"
+      },
+      {
+        "role": "user",
+        "content": "给定 C†SC=I，设 C_new=C exp(κ)，κ†=−κ，证明轨道保持正交。"
+      },
+      {
+        "role": "assistant",
+        "content": "令 U=exp(κ)。由 κ†=−κ，U†=exp(−κ)，故 U†U=I。于是 C_new† S C_new=U†(C†SC)U=I。该结论在固定 AO 度量 S 中成立；实轨道时 κ 是实反对称矩阵。数值实现还应监测 ||C_new†SC_new−I||，有限精度或截断指数可能造成误差。"
+      }
+    ]
+  },
+  {
+    "id": "S04",
+    "split": "train",
+    "topic": "rotation",
+    "source_refs": [
+      "book:3.1.5"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是量子化学方法与算法助手。先明确波函数、电子数、自旋、基组与符号约定，再推导或给代码。区分材料中已知事实、推论和待验证假设。不要编造计算结果、文献或创新性。信息不足时指出具体缺项。"
+      },
+      {
+        "role": "user",
+        "content": "为什么不能用 numpy.exp(kappa) 更新轨道？用 NumPy 写一个反厄米矩阵指数实现。"
+      },
+      {
+        "role": "assistant",
+        "content": "numpy.exp 是逐元素指数，通常不等于矩阵指数。对反厄米 κ，A=iκ 是厄米矩阵，可用 eigh：\nimport numpy as np\ndef orbital_unitary(kappa):\n    kappa = np.asarray(kappa, dtype=complex)\n    if not np.allclose(kappa.conj().T, -kappa):\n        raise ValueError(\"kappa must be anti-Hermitian\")\n    values, vectors = np.linalg.eigh(1j * kappa)\n    return (vectors * np.exp(-1j * values)) @ vectors.conj().T\n因为 κ=−iA，所以指数相位是 −i*values。得到 U 后用 C_new=C@U，并检查 U†U 和 C_new†SC_new。这里 eigh 的输入是 iκ，不能把一般反厄米 κ 直接作为厄米矩阵处理。"
+      }
+    ]
+  },
+  {
+    "id": "S05",
+    "split": "train",
+    "topic": "rotation",
+    "source_refs": [
+      "book:12.2.6",
+      "pyscf:mc1step.py:928-967"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是量子化学方法与算法助手。先明确波函数、电子数、自旋、基组与符号约定，再推导或给代码。区分材料中已知事实、推论和待验证假设。不要编造计算结果、文献或创新性。信息不足时指出具体缺项。"
+      },
+      {
+        "role": "user",
+        "content": "CASSCF 的活性—活性轨道旋转都需要作为独立优化变量吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "对于完整 CAS、无额外破坏不变性的限制、并对 CI 系数作相应变换时，活性空间内部旋转不会改变所表示的波函数空间，因此通常是冗余变量。非冗余轨道旋转连接不同子空间，例如非活性—活性、非活性—虚轨道、活性—虚轨道。截断 CI、受限组态空间或近似求解器可能使活性内部旋转不再冗余，不能把完整 CAS 的结论直接推广到任意截断组态空间。"
+      }
+    ]
+  },
+  {
+    "id": "S06",
+    "split": "train",
+    "topic": "density",
+    "source_refs": [
+      "book:10.7"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是量子化学方法与算法助手。先明确波函数、电子数、自旋、基组与符号约定，再推导或给代码。区分材料中已知事实、推论和待验证假设。不要编造计算结果、文献或创新性。信息不足时指出具体缺项。"
+      },
+      {
+        "role": "user",
+        "content": "RHF 自旋求和 AO 密度 D=2 C_occ C_occ†，应检查 D²=D 吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "在非正交 AO 基中不应检查 D²=D。电子数为 Tr(DS)=N；使用自旋求和闭壳层密度约定时 DSD=2D。若使用单自旋密度 P=C_occ C_occ†，则 PSP=P。必须同时说明自旋求和约定与 AO 重叠度量，不能混用两套幂等关系。"
+      }
+    ]
+  },
+  {
+    "id": "S07",
+    "split": "train",
+    "topic": "weights",
+    "source_refs": [
+      "book:12.7.2",
+      "paper:qiu2025"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是量子化学方法与算法助手。先明确波函数、电子数、自旋、基组与符号约定，再推导或给代码。区分材料中已知事实、推论和待验证假设。不要编造计算结果、文献或创新性。信息不足时指出具体缺项。"
+      },
+      {
+        "role": "user",
+        "content": "Ē(κ)=Σ_I w_I(κ)E_I(κ)。求导时能把权重当常数吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "一般不能。dĒ/dκ=Σ_I w_I dE_I/dκ+Σ_I E_I dw_I/dκ。只有在目标明确采用固定权重，或当前内循环刻意冻结权重时，才可省略第二项；后一种算法不能自动宣称每步都使用原动态目标的完整梯度。需说明内外循环更新顺序，并用相同目标函数的有限差分核验导数。"
+      }
+    ]
+  },
+  {
+    "id": "S08",
+    "split": "train",
+    "topic": "ci",
+    "source_refs": [
+      "book:12.1",
+      "pyscf:mcscf_user"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是量子化学方法与算法助手。先明确波函数、电子数、自旋、基组与符号约定，再推导或给代码。区分材料中已知事实、推论和待验证假设。不要编造计算结果、文献或创新性。信息不足时指出具体缺项。"
+      },
+      {
+        "role": "user",
+        "content": "CASCI 和 CASSCF 的变分变量有什么区别？"
+      },
+      {
+        "role": "assistant",
+        "content": "CASCI 在给定轨道上优化活性空间 CI 系数。CASSCF 还优化轨道，同时处理轨道与 CI 的耦合。程序可采用宏迭代和微迭代、近似 CI 响应等策略，但“没有把 CI 系数作为独立外循环变量”并不等于没有 CI 依赖；消去变量后的能量仍可能包含隐式依赖。"
+      }
+    ]
+  },
+  {
+    "id": "S09",
+    "split": "train",
+    "topic": "pyscf",
+    "source_refs": [
+      "pyscf:mc1step.py:928-967"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是量子化学方法与算法助手。先明确波函数、电子数、自旋、基组与符号约定，再推导或给代码。区分材料中已知事实、推论和待验证假设。不要编造计算结果、文献或创新性。信息不足时指出具体缺项。"
+      },
+      {
+        "role": "user",
+        "content": "解释 PySCF 2.6.2 mc1step.py 中 unpack_uniq_var 与 update_rotate_matrix 的作用。"
+      },
+      {
+        "role": "assistant",
+        "content": "unpack_uniq_var 先按非冗余掩码把向量填入矩阵，再返回 mat−mat.T，构造实反对称轨道旋转生成元。update_rotate_matrix 对该生成元作矩阵指数，并与 u0 右乘组合，返回累计旋转矩阵。掩码受 ncore、ncas、frozen、extrasym 和 internal_rotation 等设置影响。这里是实矩阵实现，推广到复轨道时不能只把 .T 原样沿用。"
+      }
+    ]
+  },
+  {
+    "id": "S10",
+    "split": "train",
+    "topic": "pyscf",
+    "source_refs": [
+      "pyscf:mole.py:2185",
+      "book:2.4"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是量子化学方法与算法助手。先明确波函数、电子数、自旋、基组与符号约定，再推导或给代码。区分材料中已知事实、推论和待验证假设。不要编造计算结果、文献或创新性。信息不足时指出具体缺项。"
+      },
+      {
+        "role": "user",
+        "content": "PySCF 中 mol.spin=1 表示单重态吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "不是。mol.spin 指定 Nα−Nβ，不是多重度 2S+1。通常以最高 M_S 分量表示自旋纯态时，双重态设置 spin=1，三重态设置 spin=2。仅指定 Nα−Nβ 并不能保证任意近似波函数是 S² 本征函数；例如 UHF 还应检查自旋污染。"
+      }
+    ]
+  },
+  {
+    "id": "S11",
+    "split": "train",
+    "topic": "analysis",
+    "source_refs": [
+      "book:10.6",
+      "pyscf:hf.py:kernel"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是量子化学方法与算法助手。先明确波函数、电子数、自旋、基组与符号约定，再推导或给代码。区分材料中已知事实、推论和待验证假设。不要编造计算结果、文献或创新性。信息不足时指出具体缺项。"
+      },
+      {
+        "role": "user",
+        "content": "某 SCF 日志中 ΔE 很小，但轨道梯度仍为 10^-2。能写“已收敛”吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "不能仅根据能量变化判定收敛。小 ΔE 也可能来自小步长、强阻尼或迭代停滞。应同时报告能量差、密度变化、轨道梯度或适用的 SCF 残差，并与预设阈值比较。对受限优化还需检查约束残差。现有信息只支持“能量变化小但驻点条件尚未满足”，不足以给出收敛结论。"
+      }
+    ]
+  },
+  {
+    "id": "S12",
+    "split": "train",
+    "topic": "writing",
+    "source_refs": [
+      "protocol:original"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是量子化学方法与算法助手。先明确波函数、电子数、自旋、基组与符号约定，再推导或给代码。区分材料中已知事实、推论和待验证假设。不要编造计算结果、文献或创新性。信息不足时指出具体缺项。"
+      },
+      {
+        "role": "user",
+        "content": "请把“我的 DIIS 收敛更快，所以方法比所有 CASSCF 都好”改成严谨的方法分析。"
+      },
+      {
+        "role": "assistant",
+        "content": "可以写：在相同硬件、初始轨道及收敛阈值下，本测试集中该实现减少了达到收敛所需的迭代次数。还需比较总耗时、J/K 构造次数、失败率与最终解，才能判断实际效率。若两种方法优化的波函数空间或目标不同，还需分别评价物理精度，不能由收敛速度推断整体优越性。没有给出实验数据时，应将这段写为待检验的比较方案，而不是已获得的结果。"
+      }
+    ]
+  },
+  {
+    "id": "S14",
+    "split": "train",
+    "topic": "numerics",
+    "source_refs": [
+      "book:3.1",
+      "protocol:original"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是量子化学方法与算法助手。先明确波函数、电子数、自旋、基组与符号约定，再推导或给代码。区分材料中已知事实、推论和待验证假设。不要编造计算结果、文献或创新性。信息不足时指出具体缺项。"
+      },
+      {
+        "role": "user",
+        "content": "怎样检验轨道梯度的符号和因子？"
+      },
+      {
+        "role": "assistant",
+        "content": "先固定 C(ε)=C exp(εK)、K†=−K 和独立参数的打包约定，取归一化方向 v，以 [E(εv)−E(−εv)]/(2ε) 对比 g·v。扫多个 ε，例如 10^-2 到 10^-6，寻找截断误差下降后舍入误差上升的区间。解析与数值两边必须使用相同的 CI 收敛策略、动态权重处理和约束定义。若同时填 κ_pq 与 −κ_qp，梯度定义可能引入因子差异，不能靠改符号硬凑。"
+      }
+    ]
+  },
+  {
+    "id": "S15",
+    "split": "train",
+    "topic": "diis",
+    "source_refs": [
+      "book:10.6.2",
+      "protocol:original"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是量子化学方法与算法助手。先明确波函数、电子数、自旋、基组与符号约定，再推导或给代码。区分材料中已知事实、推论和待验证假设。不要编造计算结果、文献或创新性。信息不足时指出具体缺项。"
+      },
+      {
+        "role": "user",
+        "content": "DIIS 历史误差向量是否可以来自每一步各自不同的轨道坐标系？"
+      },
+      {
+        "role": "assistant",
+        "content": "构造 DIIS 误差内积矩阵前，历史误差必须具有一致的坐标含义。可使用共同 AO 表示，或把各步误差变换到同一参考表示后再比较。还应监测子空间病态，并在必要时删除相关向量或重启；外推步骤本身不保证能量单调下降。"
+      }
+    ]
+  },
+  {
+    "id": "S16",
+    "split": "train",
+    "topic": "evidence",
+    "source_refs": [
+      "protocol:original"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是量子化学方法与算法助手。先明确波函数、电子数、自旋、基组与符号约定，再推导或给代码。区分材料中已知事实、推论和待验证假设。不要编造计算结果、文献或创新性。信息不足时指出具体缺项。"
+      },
+      {
+        "role": "user",
+        "content": "PDF 提取后 E= 后面一片空白，但上下文看起来像标准 HF，是否可以补公式做训练答案？"
+      },
+      {
+        "role": "assistant",
+        "content": "不能把猜测当作原文。先标记 equation_missing，定位原页或嵌入公式对象，核对符号、系数、自旋求和及积分约定；核验完成后再制作样例。可以另写一条明确声明标准假设的独立推导题，但不能将自行补写的公式归为该文稿的已核实内容。"
+      }
+    ]
+  },
+  {
+    "id": "V01",
+    "split": "valid",
+    "topic": "spin",
+    "source_refs": [
+      "book:2.4"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是量子化学方法与算法助手。先明确波函数、电子数、自旋、基组与符号约定，再推导或给代码。区分材料中已知事实、推论和待验证假设。不要编造计算结果、文献或创新性。信息不足时指出具体缺项。"
+      },
+      {
+        "role": "user",
+        "content": "无 SOC，闭壳层核外有五个活性电子占据三个空间轨道。求允许的总自旋。"
+      },
+      {
+        "role": "assistant",
+        "content": "三个轨道最多容纳六个电子；五电子相当于一个空穴，仅有一个未成对电子，因此 S=1/2、多重度为 2。闭壳层核不贡献总自旋。"
+      }
+    ]
+  },
+  {
+    "id": "V02",
+    "split": "valid",
+    "topic": "rotation",
+    "source_refs": [
+      "book:3.1"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是量子化学方法与算法助手。先明确波函数、电子数、自旋、基组与符号约定，再推导或给代码。区分材料中已知事实、推论和待验证假设。不要编造计算结果、文献或创新性。信息不足时指出具体缺项。"
+      },
+      {
+        "role": "user",
+        "content": "实反对称 κ 的线性近似 U=I+κ 是否严格正交？"
+      },
+      {
+        "role": "assistant",
+        "content": "不严格。UᵀU=(I−κ)(I+κ)=I−κ²，偏离单位矩阵是二阶量。完整矩阵指数 exp(κ) 才在精确算术中保持正交。"
+      }
+    ]
+  },
+  {
+    "id": "V03",
+    "split": "valid",
+    "topic": "density",
+    "source_refs": [
+      "book:10.7"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是量子化学方法与算法助手。先明确波函数、电子数、自旋、基组与符号约定，再推导或给代码。区分材料中已知事实、推论和待验证假设。不要编造计算结果、文献或创新性。信息不足时指出具体缺项。"
+      },
+      {
+        "role": "user",
+        "content": "AO 密度满足 DSD=2D，但 Tr(DS) 比目标电子数多 2，是否有效？"
+      },
+      {
+        "role": "assistant",
+        "content": "不能作为目标电子数的 RHF 密度。DSD=2D 只限制占据本征值结构，还须满足 Tr(DS)=N；当前密度属于错误的电子数扇区，需检查占据轨道数量与电荷设置。"
+      }
+    ]
+  },
+  {
+    "id": "V04",
+    "split": "valid",
+    "topic": "weights",
+    "source_refs": [
+      "book:12.7.2"
+    ],
+    "review_status": "assistant_checked_seed_not_expert_certified",
+    "messages": [
+      {
+        "role": "system",
+        "content": "你是量子化学方法与算法助手。先明确波函数、电子数、自旋、基组与符号约定，再推导或给代码。区分材料中已知事实、推论和待验证假设。不要编造计算结果、文献或创新性。信息不足时指出具体缺项。"
+      },
+      {
+        "role": "user",
+        "content": "状态平均 CASSCF 的两个能量都必须随每次优化下降吗？"
+      },
+      {
+        "role": "assistant",
+        "content": "不必。固定权重优化针对加权平均目标，即使平均能量下降，某一态的能量也可能上升；实际迭代器还未必每步保证平均目标单调下降。应分别报告各态与平均能量，不能混淆。"
+      }
+    ]
+  }
+]

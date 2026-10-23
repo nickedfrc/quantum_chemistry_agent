@@ -1,0 +1,31 @@
+{
+  "counts": {
+    "train": 144,
+    "valid": 20
+  },
+  "diagnostic_cases": 6,
+  "max_tokens": {
+    "train": 479,
+    "valid": 402
+  },
+  "note": "Exact prompt separation only; topics and sources overlap. Not an independent generalization benchmark.",
+  "numerical_checks": {
+    "status": "passed",
+    "checked_functions": [
+      "central_directional_derivative",
+      "ci_residual",
+      "density_matrix",
+      "orbital_unitary",
+      "orthogonality_error",
+      "rhf_energy"
+    ],
+    "loss_mask_check": "Passed: prompt and padding targets are excluded.",
+    "scope": "Selected NumPy examples and loss boundaries; no automatic scientific grading or PySCF execution."
+  },
+  "hashes": {
+    "experiments/followup/train.jsonl": "97839ecd4417da9042f146450885e3a92449570ada340930d59f40f16e43b0a6",
+    "experiments/followup/valid.jsonl": "14fe14707c2dfac910baceddbeefc6d23c6b157263496ff27f42a69bd226d93f",
+    "experiments/followup/holdout.jsonl": "8add33e8726e98c1412449b1fd877a20e628febef040dac482f36d476fbf6ae0",
+    "experiments/followup/train_config.yaml": "77c1274826b5fef8efbc70263e94e37c586c3a05e95aea08feef14b02efe2ab2"
+  }
+}

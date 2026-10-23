@@ -1,0 +1,33 @@
+{
+  "method": "CPU NumPy affine int4 dequantization and FP16 LoRA merge",
+  "source_revision": "b3252a2f97102b1fb1571fec2c9b27219a8536be",
+  "adapter_sha256": "01872b898f7d6ae3ce4c0bfcd1f0cb0e6bc7bccaf9ac0aafbbb1b9e2fa8912e8",
+  "output_sha256": "2a42fc8e9783af4a9ab356f74676268b443d12263924bf6c1ee87e42252b280a",
+  "output_bytes": 3087466808,
+  "tensor_count": 338,
+  "parameter_count": 1543714304,
+  "merged_modules": [
+    "model.layers.24.self_attn.q_proj",
+    "model.layers.24.self_attn.v_proj",
+    "model.layers.25.self_attn.q_proj",
+    "model.layers.25.self_attn.v_proj",
+    "model.layers.26.self_attn.q_proj",
+    "model.layers.26.self_attn.v_proj",
+    "model.layers.27.self_attn.q_proj",
+    "model.layers.27.self_attn.v_proj"
+  ],
+  "synthetic_tests": "passed",
+  "all_output_weights_finite": true,
+  "limitation": "Not bitwise compared with native MLX fusion; deployment is evaluated separately.",
+  "ollama_version": "0.40.6",
+  "ollama_model": "quantum-chemistry-pilot:1.5b",
+  "ollama_model_id": "0db46efa4b04",
+  "llama_cpp_release": "b11836",
+  "gguf_quantization": "Q4_K_M",
+  "import_status": "success",
+  "smoke_inference_status": "completed",
+  "scientific_review": "Failed: the response does not state the requested counts and defines multiplicity incorrectly.",
+  "matched_mlx_results_apply_to_this_export": false,
+  "gguf_sha256": "d9c3ca5b904424511f50de3a9b64d1f0eb7e389eccd47194f95a8953cbbf4f95",
+  "gguf_bytes": 986047936
+}

@@ -1,0 +1,25 @@
+{
+  "counts": {
+    "train": 144,
+    "valid": 20
+  },
+  "diagnostic_cases": 6,
+  "max_tokens": {
+    "train": 479,
+    "valid": 402
+  },
+  "note": "Exact prompt separation only; topics and sources overlap. Not an independent generalization benchmark.",
+  "numerical_checks": {
+    "status": "passed",
+    "checked_functions": [
+      "central_directional_derivative",
+      "ci_residual",
+      "density_matrix",
+      "orbital_unitary",
+      "orthogonality_error",
+      "rhf_energy"
+    ],
+    "loss_mask_check": "Passed: prompt and padding targets are excluded.",
+    "scope": "Selected NumPy examples and loss boundaries; no automatic scientific grading or PySCF execution."
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "repository": "mlx-community/Qwen2.5-Coder-1.5B-Instruct-4bit",
+  "revision": "b3252a2f97102b1fb1571fec2c9b27219a8536be",
+  "upstream": "Qwen/Qwen2.5-Coder-1.5B-Instruct",
+  "quantization": "4-bit MLX",
+  "license": "Apache-2.0"
+}

@@ -1,0 +1,300 @@
+[
+  {
+    "id": "book:2.4",
+    "title": "Molecular Electronic-Structure Theory",
+    "authors": [
+      "Trygve Helgaker",
+      "Poul Jørgensen",
+      "Jeppe Olsen"
+    ],
+    "locator": "Section 2.4",
+    "edition": "Wiley, 2000"
+  },
+  {
+    "id": "book:2.5",
+    "title": "Molecular Electronic-Structure Theory",
+    "authors": [
+      "Trygve Helgaker",
+      "Poul Jørgensen",
+      "Jeppe Olsen"
+    ],
+    "locator": "Section 2.5",
+    "edition": "Wiley, 2000"
+  },
+  {
+    "id": "book:3.1",
+    "title": "Molecular Electronic-Structure Theory",
+    "authors": [
+      "Trygve Helgaker",
+      "Poul Jørgensen",
+      "Jeppe Olsen"
+    ],
+    "locator": "Section 3.1",
+    "edition": "Wiley, 2000"
+  },
+  {
+    "id": "book:3.1.5",
+    "title": "Molecular Electronic-Structure Theory",
+    "authors": [
+      "Trygve Helgaker",
+      "Poul Jørgensen",
+      "Jeppe Olsen"
+    ],
+    "locator": "Section 3.1.5",
+    "edition": "Wiley, 2000"
+  },
+  {
+    "id": "book:10.6",
+    "title": "Molecular Electronic-Structure Theory",
+    "authors": [
+      "Trygve Helgaker",
+      "Poul Jørgensen",
+      "Jeppe Olsen"
+    ],
+    "locator": "Section 10.6",
+    "edition": "Wiley, 2000"
+  },
+  {
+    "id": "book:10.6.2",
+    "title": "Molecular Electronic-Structure Theory",
+    "authors": [
+      "Trygve Helgaker",
+      "Poul Jørgensen",
+      "Jeppe Olsen"
+    ],
+    "locator": "Section 10.6.2",
+    "edition": "Wiley, 2000"
+  },
+  {
+    "id": "book:10.7",
+    "title": "Molecular Electronic-Structure Theory",
+    "authors": [
+      "Trygve Helgaker",
+      "Poul Jørgensen",
+      "Jeppe Olsen"
+    ],
+    "locator": "Section 10.7",
+    "edition": "Wiley, 2000"
+  },
+  {
+    "id": "book:12.1",
+    "title": "Molecular Electronic-Structure Theory",
+    "authors": [
+      "Trygve Helgaker",
+      "Poul Jørgensen",
+      "Jeppe Olsen"
+    ],
+    "locator": "Section 12.1",
+    "edition": "Wiley, 2000"
+  },
+  {
+    "id": "book:12.2.6",
+    "title": "Molecular Electronic-Structure Theory",
+    "authors": [
+      "Trygve Helgaker",
+      "Poul Jørgensen",
+      "Jeppe Olsen"
+    ],
+    "locator": "Section 12.2.6",
+    "edition": "Wiley, 2000"
+  },
+  {
+    "id": "book:12.7.2",
+    "title": "Molecular Electronic-Structure Theory",
+    "authors": [
+      "Trygve Helgaker",
+      "Poul Jørgensen",
+      "Jeppe Olsen"
+    ],
+    "locator": "Section 12.7.2",
+    "edition": "Wiley, 2000"
+  },
+  {
+    "id": "pyscf:mc1step.py:928-967",
+    "version": "2.6.2",
+    "locator": "928–967行",
+    "url": "https://github.com/pyscf/pyscf/blob/v2.6.2/pyscf/mcscf/mc1step.py"
+  },
+  {
+    "id": "pyscf:mole.py:2185",
+    "version": "2.6.2",
+    "locator": "2185起与nelec属性",
+    "url": "https://github.com/pyscf/pyscf/blob/v2.6.2/pyscf/gto/mole.py"
+  },
+  {
+    "id": "pyscf:hf.py:kernel",
+    "version": "2.6.2",
+    "locator": "kernel函数与收敛判断",
+    "url": "https://github.com/pyscf/pyscf/blob/v2.6.2/pyscf/scf/hf.py"
+  },
+  {
+    "id": "pyscf:mcscf_user",
+    "url": "https://pyscf.org/user/mcscf.html",
+    "title": "PySCF MCSCF user guide"
+  },
+  {
+    "id": "paper:qiu2024",
+    "url": "https://arxiv.org/abs/2409.14631",
+    "title": "An Efficient Algorithm for Constrained CASSCF(1,2) and CASSCF(3,2) Simulations as Relevant to Electron and Hole Transfer Problems",
+    "authors": [
+      "Tian Qiu",
+      "Joseph E. Subotnik"
+    ],
+    "doi": "10.1021/acs.jctc.4c00937"
+  },
+  {
+    "id": "paper:qiu2025",
+    "url": "https://arxiv.org/abs/2508.21136",
+    "title": "Fast Methods For Multisite Charge Transfer Processes I: Constrained, State Averaged CASSCF(1,M) and CASSCF(2M-1,M) Simulations",
+    "authors": [
+      "Tian Qiu",
+      "Joseph E. Subotnik"
+    ],
+    "doi": "10.1063/5.0300687"
+  },
+  {
+    "id": "paper:sun2017",
+    "url": "https://arxiv.org/abs/1610.08394",
+    "title": "A general second order complete active space self-consistent-field solver for large-scale systems",
+    "authors": [
+      "Qiming Sun",
+      "Jun Yang",
+      "Garnet Kin-Lic Chan"
+    ],
+    "doi": "10.1016/j.cplett.2017.03.004"
+  },
+  {
+    "id": "paper:quotr",
+    "url": "https://pubs.rsc.org/en/content/articlepdf/2024/cp/d3cp05557d",
+    "title": "Economical quasi-Newton unitary optimization of electronic orbitals",
+    "doi": "10.1039/D3CP05557D",
+    "year": 2024
+  },
+  {
+    "id": "paper:mcweeny1974",
+    "title": "SCF theory for excited states. I. Optimal orbitals for the states of a configuration",
+    "doi": "10.1080/00268977400102581"
+  },
+  {
+    "id": "paper:pulay1982",
+    "title": "Improved SCF Convergence Acceleration",
+    "url": "https://doi.org/10.1002/jcc.540030413",
+    "doi": "10.1002/jcc.540030413",
+    "year": 1982,
+    "accessed": "2026-10-23",
+    "verification": "Publisher metadata and abstract checked; no claim of full-text access.",
+    "redistribution": "Reference only; source text not redistributed"
+  },
+  {
+    "id": "paper:helgaker2000",
+    "title": "Direct optimization of the AO density matrix in Hartree–Fock and Kohn–Sham theories"
+  },
+  {
+    "id": "paper:hutter1994",
+    "title": "Exponential transformation of molecular orbitals",
+    "doi": "10.1063/1.467504"
+  },
+  {
+    "id": "paper:liang2004",
+    "title": "An exact reformulation of the diagonalization step in electronic structure calculations as a set of second order nonlinear equations",
+    "doi": "10.1063/1.1729870"
+  },
+  {
+    "id": "protocol:original",
+    "title": "Original numerical verification and scientific writing exercises"
+  },
+  {
+    "id": "book:11",
+    "title": "Molecular Electronic-Structure Theory",
+    "authors": [
+      "Trygve Helgaker",
+      "Poul Jørgensen",
+      "Jeppe Olsen"
+    ],
+    "edition": "Wiley, 2000",
+    "locator": "Section 11: Configuration-Interaction Theory"
+  },
+  {
+    "id": "book:10.8",
+    "title": "Molecular Electronic-Structure Theory",
+    "authors": [
+      "Trygve Helgaker",
+      "Poul Jørgensen",
+      "Jeppe Olsen"
+    ],
+    "edition": "Wiley, 2000",
+    "locator": "Section 10.8: Second-order optimization"
+  },
+  {
+    "id": "paper:pyscf2020",
+    "title": "Recent developments in the PySCF program package",
+    "url": "https://arxiv.org/abs/2002.12531",
+    "accessed": "2026-10-23",
+    "verification": "Full public article consulted; implementation framework and method coverage.",
+    "redistribution": "Reference only; source text not redistributed"
+  },
+  {
+    "id": "paper:libcint2015",
+    "title": "Libcint: An efficient general integral library for Gaussian basis functions",
+    "url": "https://arxiv.org/abs/1412.0649",
+    "accessed": "2026-10-23",
+    "verification": "Public abstract and official repository citation checked; no benchmark values reused.",
+    "redistribution": "Reference only; source text not redistributed"
+  },
+  {
+    "id": "paper:davidson1975",
+    "title": "The iterative calculation of a few of the lowest eigenvalues and corresponding eigenvectors of large real-symmetric matrices",
+    "url": "https://doi.org/10.1016/0021-9991(75)90065-0",
+    "accessed": "2026-10-23",
+    "verification": "Publisher bibliographic record checked; no claim of full-text access.",
+    "redistribution": "Reference only; source text not redistributed"
+  },
+  {
+    "id": "pyscf:scf_user",
+    "title": "Self-consistent field methods",
+    "url": "https://pyscf.org/user/scf.html",
+    "accessed": "2026-10-23",
+    "verification": "Official user guide consulted; examples run with 2.6.2.",
+    "redistribution": "Reference only; source text not redistributed"
+  },
+  {
+    "id": "pyscf:mp_user",
+    "title": "Second-order Moller-Plesset perturbation theory",
+    "url": "https://pyscf.org/user/mp.html",
+    "accessed": "2026-10-23",
+    "verification": "Official user guide and public 2.6.2 source consulted.",
+    "redistribution": "Reference only; source text not redistributed"
+  },
+  {
+    "id": "pyscf:cc_user",
+    "title": "Coupled-cluster theory",
+    "url": "https://pyscf.org/user/cc.html",
+    "accessed": "2026-10-23",
+    "verification": "Official user guide and public 2.6.2 source consulted.",
+    "redistribution": "Reference only; source text not redistributed"
+  },
+  {
+    "id": "pyscf:ao2mo",
+    "title": "AO-to-MO integral transformation",
+    "url": "https://pyscf.org/_modules/pyscf/ao2mo.html",
+    "accessed": "2026-10-23",
+    "verification": "Official API source consulted; original test compares explicit and library transformations.",
+    "redistribution": "Reference only; source text not redistributed"
+  },
+  {
+    "id": "pyscf:df_user",
+    "title": "Density fitting",
+    "url": "https://pyscf.org/user/df.html",
+    "accessed": "2026-10-23",
+    "verification": "Held-out follow-up diagnostic family; no examples added to training.",
+    "redistribution": "Reference only; source text not redistributed"
+  },
+  {
+    "id": "pyscf:geomopt_user",
+    "title": "Geometry optimization",
+    "url": "https://pyscf.org/user/geomopt.html",
+    "accessed": "2026-10-23",
+    "verification": "Held-out follow-up gradient diagnostic family; units checked.",
+    "redistribution": "Reference only; source text not redistributed"
+  }
+]

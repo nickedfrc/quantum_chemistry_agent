@@ -1,0 +1,49 @@
+{
+  "training_completed": true,
+  "steps": 576,
+  "trainable_parameters": 155648,
+  "adapter_bytes": 624302,
+  "reported_validation_loss": [
+    {
+      "iteration": 1,
+      "loss": 3.388
+    },
+    {
+      "iteration": 144,
+      "loss": 2.769
+    },
+    {
+      "iteration": 288,
+      "loss": 2.578
+    },
+    {
+      "iteration": 432,
+      "loss": 2.495
+    },
+    {
+      "iteration": 576,
+      "loss": 2.466
+    }
+  ],
+  "training_stage_seconds": 449.0875176249974,
+  "baseline_stage_seconds": 53.3106209999969,
+  "adapted_stage_seconds": 28.64319925000018,
+  "training_peak_memory_gb": null,
+  "diagnostics": {
+    "before": {
+      "cases": 6,
+      "strict_passes": 0,
+      "truncated": 3,
+      "generated_tokens": 2766,
+      "max_reported_inference_peak_gb": 1.172500278
+    },
+    "after": {
+      "cases": 6,
+      "strict_passes": 0,
+      "truncated": 1,
+      "generated_tokens": 1312,
+      "max_reported_inference_peak_gb": 1.172336504
+    }
+  },
+  "interpretation": "The expanded dataset and training duration both changed. These six family-separated, development-visible diagnostics differ from the first pilot. Results do not establish expert reliability."
+}
